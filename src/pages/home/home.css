@@ -1,0 +1,67 @@
+.header {
+	width: 100%;
+}
+.logo {
+	width: 10rem;
+	cursor: pointer;
+}
+
+.navbar {
+	padding: 1rem 0;
+}
+.menu {
+	width: 2em;
+	cursor: pointer;
+}
+.main {
+	padding: 3.2rem 0;
+}
+.stats-info {
+	border-bottom: 1px solid var(--light-gray);
+	padding: 1rem 2rem;
+}
+.number {
+	font-size: 3.6rem;
+	font-weight: 500;
+}
+.sign {
+	color: var(--orange-red);
+	font-weight: bolder;
+	font-size: 3.6rem;
+	display: inline-block;
+}
+.stats-text {
+	font-size: 1.4rem;
+	font-weight: 200;
+	color: var(--light-gray);
+}
+
+.article {
+	background: var(--orange-red);
+	position: relative;
+	overflow-x: hidden;
+}
+.article-text {
+	font-size: 3rem;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.brush {
+	position: absolute;
+	max-width: 9.8rem;
+	bottom: 4rem;
+	right: -3rem;
+}
+.approach-heading {
+	font-size: 3rem;
+	text-transform: capitalize;
+}
+.approach-heading span {
+	color: var(--orange-red);
+}
+/* font sizes */
+/* 10/ 12 /14 /16 /18/ 20/ 24/ 30/ 36/ 44 /52 /62 /74 /86 /98 */
+
+/* spacing */
+/* 2 /4 /8 /12 /16 /24 /32 /48 /64 /80 /96 /128 */
