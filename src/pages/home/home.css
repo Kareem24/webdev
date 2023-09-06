@@ -1,5 +1,6 @@
 .header {
 	width: 100%;
+	border: 1px solid yellow;
 }
 .logo {
 	width: 10rem;
@@ -15,10 +16,7 @@
 }
 .main {
 	padding: 3.2rem 0;
-}
-.stats-info {
-	border-bottom: 1px solid var(--light-gray);
-	padding: 1rem 2rem;
+	width: 100%;
 }
 .number {
 	font-size: 3.6rem;
@@ -40,6 +38,8 @@
 	background: var(--orange-red);
 	position: relative;
 	overflow-x: hidden;
+	background-attachment: fixed;
+	background-blend-mode: soft-light;
 }
 .article-text {
 	font-size: 3rem;
@@ -53,15 +53,155 @@
 	bottom: 4rem;
 	right: -3rem;
 }
-.approach-heading {
-	font-size: 3rem;
-	text-transform: capitalize;
-}
-.approach-heading span {
+
+.orange {
 	color: var(--orange-red);
 }
-/* font sizes */
-/* 10/ 12 /14 /16 /18/ 20/ 24/ 30/ 36/ 44 /52 /62 /74 /86 /98 */
 
-/* spacing */
-/* 2 /4 /8 /12 /16 /24 /32 /48 /64 /80 /96 /128 */
+.approach-info p {
+	margin-bottom: 3.2rem;
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: var(--light-gray);
+}
+
+.arrow {
+	width: 1.6rem;
+	cursor: pointer;
+}
+.service-tech:last-child {
+	border: none;
+}
+
+.service-title {
+	font-size: 1.8rem;
+}
+.tags {
+	margin-top: 1.2rem;
+	gap: 1.2rem;
+}
+.tag {
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	border: 1px solid var(--light-gray);
+}
+.card-title {
+	font-size: 2rem;
+	margin-top: 1.6rem;
+}
+.btn {
+	width: 100%;
+	padding: 2rem;
+	background: var(--orange-red);
+	color: var(--white);
+	text-transform: capitalize;
+	font-size: 1.8rem;
+}
+.workflow-step {
+	background: var(--dark-2);
+	padding: 1rem 2rem;
+	margin-bottom: 2.4rem;
+}
+.workflow-steps__heading {
+	gap: 1.2rem;
+	font-size: 1.8rem;
+}
+.workflow-desc {
+	font-size: 1.6rem;
+	color: var(--light-gray);
+	line-height: 1.5;
+	margin-top: 1.2rem;
+}
+.star {
+	width: 2.4rem;
+}
+.slider {
+	background: var(--dark-2);
+	overflow-x: hidden;
+	padding: 1rem 0;
+}
+.top {
+	gap: 1rem;
+}
+.top:not(:last-child) {
+	margin-bottom: 1rem;
+}
+.slider-text {
+	text-transform: capitalize;
+	font-size: 1.6rem;
+	font-weight: bold;
+	white-space: nowrap;
+}
+.radio {
+	width: 7.4rem;
+}
+.name p {
+	font-size: 2rem;
+}
+.name small {
+	font-size: 1.6rem;
+}
+.dot {
+	width: 1rem;
+	height: 1rem;
+	background: var(--light-gray);
+	border-radius: 50%;
+}
+.dots {
+	gap: 1rem;
+	margin-top: 1rem;
+}
+.active {
+	height: 2rem;
+	border-radius: 9px;
+	background: var(--white);
+}
+@media (min-width: 786px) {
+	.logo {
+		width: 15rem;
+	}
+	.info-img {
+		order: 2;
+	}
+	.statistics {
+		grid-template-columns: 1fr 3fr;
+	}
+	.number,
+	.sign {
+		font-size: 5.4rem;
+	}
+	.stats-info {
+		margin-bottom: 2.4rem;
+	}
+	.article-text {
+		font-size: 7.4rem;
+		line-height: 1.2;
+	}
+	.brush {
+		max-width: 10.6rem;
+		bottom: 7rem;
+		right: 0rem;
+	}
+	.approach-contain {
+		gap: 7.4rem;
+	}
+	.approach-img {
+		order: -1;
+	}
+	.approach-info {
+		align-self: center;
+	}
+
+	.workflow-step {
+		margin-bottom: 0;
+		padding: 2rem 3.2rem;
+	}
+	.btn {
+		width: 30%;
+	}
+	.quote-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}

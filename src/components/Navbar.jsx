@@ -1,5 +1,5 @@
-import logo from '../../assets/Logo.png'
-import hamburger from '../../assets/menu.png'
+import logo from '../assets/Logo.png'
+import hamburger from '../assets/menu.png'
 const Navbar = () => {
   const links = ['about us', 'services','project','blog','contact']
   return (
