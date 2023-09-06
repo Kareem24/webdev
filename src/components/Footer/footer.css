@@ -48,7 +48,7 @@
 	margin-top: 1.4rem;
 	font-size: 1.4rem;
 }
-@media (min-width: 786px) {
+@media (min-width: 51em) {
 	.footer-heading {
 		grid-template-columns: 2fr 1fr;
 	}

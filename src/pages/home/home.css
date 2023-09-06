@@ -156,10 +156,11 @@
 	border-radius: 9px;
 	background: var(--white);
 }
-@media (min-width: 786px) {
+@media (min-width: 51em) {
 	.logo {
 		width: 15rem;
 	}
+
 	.info-img {
 		order: 2;
 	}
@@ -198,6 +199,7 @@
 	}
 	.btn {
 		width: 30%;
+		min-width: 13.8rem;
 	}
 	.quote-wrapper {
 		display: flex;
