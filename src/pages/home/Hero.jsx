@@ -1,14 +1,16 @@
 import heroimg from '../../assets/hero-img.png'
 import brush from '../../assets/brush-touch.png'
 import approachImg  from '../../assets/approach-img.png'
-import arrowImg  from '../../assets/arrow-up.png'
 import card1  from '../../assets/card-1.png'
 import card2  from '../../assets/card-2.png'
 import card3  from '../../assets/card-3.png'
 import card4  from '../../assets/card-4.png'
 import star from '../../assets/Star.png'
 import quote from '../../assets/quote.png'
-import PropTypes from 'prop-types'
+import { Workflow } from './Workflow'
+import { Cards } from './Cards'
+import { Services } from './Services'
+import { Stats } from './Stats'
 
 
 function Hero() {
@@ -22,7 +24,7 @@ function Hero() {
           <div className="info-img">
             <img src={heroimg} alt="" className="hero-img" />
           </div>
-          <div>
+          <div className='flex flex-col jc-sb'>
           <Stats num ='05' sign='+' info='Years Of Experience'/>
           <Stats num ='60' sign='+' info='Design Awards'/>
           <Stats num ='97' sign='%' info='Client Satisfaction'/>
@@ -30,8 +32,8 @@ function Hero() {
         </div>
       </div>
     </section>
-    <article className="article container-inner">
-      <p className='article-text'>We looked at yesterday’s world and changed the rules of the game a bit.</p>
+    <article className="article  container-inner">
+      <p className='article-text special'>We looked at yesterday’s world and changed the rules of the game a bit.</p>
       <img src={brush} alt="" className="brush" />
     </article>
     <section className="approach container-inner">
@@ -40,7 +42,7 @@ function Hero() {
         
         <article className="approach-info">
           <p className='text mb-regular'>
-            Located in Lagos, we are a professional creative design agency that has done many projects with various clients across the world.
+            Located in Lagos, we are a professional creative design agency that has done many projects with various clients  across the world.
           </p>
           <p className='text mb-regular'>
             We are a team of creative people who are committed to giving the world a little touch of beauty with our designs. We love what we do and we do it with passions. We believe in using business to drive positive changes in the world & never setting for what worked in the past.
@@ -106,7 +108,7 @@ function Hero() {
         <span className='slider-text'>animation</span>
         <span><img src={star} alt="" className="star" /></span>
       </div>
-      <div className="top flex">
+      <div className=" left flex">
         <span className='slider-text'>copy writing</span>
         <span><img src={star} alt="" className="star" /></span>
         <span className='slider-text'>Digital Marketing</span>
@@ -125,77 +127,34 @@ function Hero() {
     </div>
     <article className="article container-inner">
       <div className="quote flex flex-col">
-        <img src={quote} alt="" className="radio" />
+        <img src={quote} alt="" className="radio quote-img" />
+        <div>
 
         <p className="article-text">
           Route agency team are just amazing. We have had some personal websites and dashboards. The team always delivered on time. The best quality with endless iterations. Good Job!
         </p>
-      </div>
-      <div className="quote-wrapper">
-        <div className="name">
-          <p>
-          Elizabeth
-          </p>
-          <small>Los Angeles, CA</small>
-        
-        </div>
-          <div className="flex ai-c dots">
-            <div className="dot"></div>
-            <div className="dot "></div>
-            <div className="dot active"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
+          <div className="quote-wrapper">
+            <div className="name">
+              <p>
+              Elizabeth
+              </p>
+              <small>Los Angeles, CA</small>
+            
+            </div>
+              <div className="flex ai-c dots">
+                <div className="dot"></div>
+                <div className="dot "></div>
+                <div className="dot active"></div>
+                <div className="dot"></div>
+              <div className="dot"></div>
+            </div>
           </div>
+        </div>
+
       </div>
     </article>
   </>
   )
-}
-
-
-function Stats({num, sign, info}) {
-  return<div className="stats-info bottom-border">
-    <p className="number">{num}<span className="sign">{sign}</span></p>
-          <p className="stats-text">{info}</p>
-        </div>
-}
-function Services(props) {
-  return <>
-    <div className="service-tech  bottom-border flex ai-c jc-sb">
-      <p className="service-title">{props.title}</p>
-      <img src={arrowImg} alt="" className="arrow" />
-   </div>
-  </>
-}
-const Cards = (props) => {
-  return<div className="card mb-regular">
-        <img src={props.cardImg} alt="" className="card-img" />
-      <ul className="tags flex">
-        <li className='tag text'>Website</li>
-        <li className='tag text'>Design</li>
-        <li className='tag text'>Development</li>
-
-        </ul>
-      <p className="card-title">{ props.title}</p>
-      </div>
-
-}
-function Workflow({num,title,desc}) {
-  return (<div className="workflow-step">
-    <h3 className="workflow-steps__heading flex"><span className='flow-num orange'>#{num}</span>{title}</h3>
-    <p className="workflow-desc">{ desc}</p>
-  </div>
-
-    );
-}
-
-Services.propTypes = {
-  title:PropTypes.string
-}
-Stats.propTypes = {
-  num: PropTypes.string,
-  sign: PropTypes.string,
-  info:PropTypes.string
 }
 
 

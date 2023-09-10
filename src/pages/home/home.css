@@ -21,17 +21,22 @@
 .number {
 	font-size: 3.6rem;
 	font-weight: 500;
+	font-family: "Syne", sans-serif;
 }
 .sign {
 	color: var(--orange-red);
 	font-weight: bolder;
 	font-size: 3.6rem;
 	display: inline-block;
+	font-family: "Syne", sans-serif;
 }
 .stats-text {
 	font-size: 1.4rem;
 	font-weight: 200;
 	color: var(--light-gray);
+}
+.stats-special {
+	margin: 1.2rem 0 1.6rem;
 }
 
 .article {
@@ -44,7 +49,18 @@
 .article-text {
 	font-size: 3rem;
 	font-weight: 500;
+	font-family: "Syne", sans-serif;
+	font-weight: 400;
 	line-height: 1.5;
+}
+
+.quote-wrapper {
+	margin: 1.6rem 0 2rem;
+}
+
+.quote .article-text {
+	font-size: 2rem;
+	font-family: "DM Sans", sans-serif;
 }
 
 .brush {
@@ -56,6 +72,10 @@
 
 .orange {
 	color: var(--orange-red);
+}
+
+.approach {
+	margin-top: 8rem;
 }
 
 .approach-info p {
@@ -75,6 +95,8 @@
 
 .service-title {
 	font-size: 1.8rem;
+	font-family: "Syne", sans-serif;
+	margin: 1.4rem 0 1.6rem;
 }
 .tags {
 	margin-top: 1.2rem;
@@ -131,6 +153,7 @@
 	font-size: 1.6rem;
 	font-weight: bold;
 	white-space: nowrap;
+	font-family: "Syne", sans-serif;
 }
 .radio {
 	width: 7.4rem;
@@ -156,6 +179,149 @@
 	border-radius: 9px;
 	background: var(--white);
 }
+.top {
+	animation: slide-right 10s linear infinite 1s;
+}
+.left {
+	transform: translateX(-50%);
+	animation: slide-left 9s linear infinite 3s;
+}
+@keyframes slide-right {
+	0% {
+		transform: translateX(0%);
+	}
+	3% {
+		transform: translateX(-10%);
+	}
+	5% {
+		transform: translateX(-20%);
+	}
+	10% {
+		transform: translateX(-30%);
+	}
+	15% {
+		transform: translateX(-40%);
+	}
+	20% {
+		transform: translateX(-50%);
+	}
+	25% {
+		transform: translateX(-60%);
+	}
+	30% {
+		transform: translateX(-70%);
+	}
+	35% {
+		transform: translateX(-80%);
+	}
+	40% {
+		transform: translateX(-90%);
+	}
+	45% {
+		transform: translateX(-100%);
+	}
+	50% {
+		transform: translateX(-90%);
+	}
+	55% {
+		transform: translateX(-80%);
+	}
+	60% {
+		transform: translateX(-70%);
+	}
+	65% {
+		transform: translateX(-60%);
+	}
+	70% {
+		transform: translateX(-50%);
+	}
+	75% {
+		transform: translateX(-40%);
+	}
+	80% {
+		transform: translateX(-30%);
+	}
+	85% {
+		transform: translateX(-20%);
+	}
+	90% {
+		transform: translateX(-10%);
+	}
+	95% {
+		transform: translateX(-5%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+@keyframes slide-left {
+	0% {
+		transform: translateX(-40%);
+	}
+	3% {
+		transform: translateX(-30%);
+	}
+	5% {
+		transform: translateX(-20%);
+	}
+	10% {
+		transform: translateX(-10%);
+	}
+	15% {
+		transform: translateX(0%);
+	}
+	20% {
+		transform: translateX(-10%);
+	}
+	25% {
+		transform: translateX(-20%);
+	}
+	30% {
+		transform: translateX(-30%);
+	}
+	35% {
+		transform: translateX(-40%);
+	}
+	40% {
+		transform: translateX(-50%);
+	}
+	45% {
+		transform: translateX(-60%);
+	}
+	50% {
+		transform: translateX(-65%);
+	}
+	55% {
+		transform: translateX(-70%);
+	}
+	60% {
+		transform: translateX(-75%);
+	}
+	65% {
+		transform: translateX(-80%);
+	}
+	70% {
+		transform: translateX(-85%);
+	}
+	75% {
+		transform: translateX(-90%);
+	}
+	80% {
+		transform: translateX(-85%);
+	}
+	85% {
+		transform: translateX(-75%);
+	}
+	90% {
+		transform: translateX(-60%);
+	}
+	95% {
+		transform: translateX(-50%);
+	}
+	100% {
+		transform: translateX(-40%);
+	}
+}
 @media (min-width: 51em) {
 	.logo {
 		width: 15rem;
@@ -171,12 +337,17 @@
 	.sign {
 		font-size: 5.4rem;
 	}
-	.stats-info {
-		margin-bottom: 2.4rem;
-	}
+
 	.article-text {
 		font-size: 7.4rem;
 		line-height: 1.2;
+		font-weight: 400;
+	}
+	.special {
+		text-transform: capitalize;
+	}
+	.quote .article-text {
+		font-size: 5.4rem;
 	}
 	.brush {
 		max-width: 10.6rem;
@@ -191,6 +362,10 @@
 	}
 	.approach-info {
 		align-self: center;
+		width: 85%;
+	}
+	.service-title {
+		font-size: 3.8rem;
 	}
 
 	.workflow-step {

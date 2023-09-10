@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Rubik:wght@400;500;700&family=Syne:wght@400;500;700;800&family=Ubuntu:wght@400;500;700&display=swap");
 /* reset css */
 *,
 *::after,
@@ -8,6 +9,7 @@
 	list-style: none;
 	text-decoration: none;
 }
+
 /* font sizes */
 /* 10/ 12 /14 /16 /18/ 20/ 24/ 30/ 36/ 44 /52 /62 /74 /86 /98 */
 
@@ -19,7 +21,7 @@
 
 	--orange-red: #ff463a;
 	--white: #fff;
-	--light-gray: #ffffffb3;
+	--light-gray: rgba(255, 255, 255, 0.64);
 }
 
 html {
@@ -36,7 +38,12 @@ a {
 body {
 	background: var(--dark);
 	color: var(--white);
-	font-family: sans-serif;
+}
+p,
+span,
+small,
+h3 {
+	font-family: "DM Sans", sans-serif;
 }
 button {
 	border: none;
@@ -69,6 +76,9 @@ button {
 .jc-c {
 	justify-content: center;
 }
+.ai-fe {
+	align-items: flex-end;
+}
 
 .d-none {
 	display: none;
@@ -79,13 +89,14 @@ button {
 }
 
 .container-inner {
-	padding: 4.8rem 10%;
+	padding: 8rem 10%;
 }
 .text {
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	font-weight: 400;
 	color: var(--light-gray);
-	line-height: 1.5;
+	line-height: 1.8;
+	font-family: "DM Sans", sans-serif;
 }
 .bottom-border {
 	border-bottom: 1px solid var(--light-gray);
@@ -95,6 +106,8 @@ button {
 	font-size: 3rem;
 	text-transform: capitalize;
 	margin-bottom: 1.6rem;
+	font-family: "Syne", sans-serif;
+	font-weight: 700;
 }
 .mb-regular {
 	margin-bottom: 3.2rem;
@@ -119,6 +132,7 @@ button {
 		display: flex;
 		color: white;
 		gap: 2.4rem;
+		font-family: "DM Sans", sans-serif;
 	}
 	.nav-links li {
 		font-size: 1.6rem;
@@ -128,6 +142,9 @@ button {
 		transition: all 0.3s ease-in;
 		display: inline-flex;
 	}
+	.message-mail {
+		color: var(--orange-red);
+	}
 	.message-mail:hover,
 	.nav-links li:hover {
 		color: var(--orange-red);
@@ -135,7 +152,9 @@ button {
 		font-weight: bold;
 	}
 	.mail-icon {
-		width: 1.6rem;
+		width: 2.6rem;
+		height: 2.03rem;
+		margin-right: 5px;
 	}
 	.grid-gap {
 		gap: 2.4rem;
@@ -162,5 +181,10 @@ button {
 	}
 	.up-arrows {
 		width: 8.6rem;
+	}
+	.quote {
+		flex-direction: row;
+		align-items: start;
+		gap: 2rem;
 	}
 }
